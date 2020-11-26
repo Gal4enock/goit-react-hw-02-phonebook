@@ -19,8 +19,8 @@ class App extends Component {
       name,
       id: uuidv4(),
       number
-    }
-    console.log(contact.name);
+    };
+    
     const doubleName = this.state.contacts.find(el => el.name === contact.name);
     if (doubleName) {
       alert(`${contact.name} is already in contacts`);
